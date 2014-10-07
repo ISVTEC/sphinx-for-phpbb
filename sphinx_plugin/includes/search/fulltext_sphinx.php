@@ -303,7 +303,7 @@ class fulltext_sphinx
 					array('mem_limit',					$config['fulltext_sphinx_indexer_mem_limit'] . 'M'),
 				),
 				'searchd' => array(
-					array('address'	,					'127.0.0.1'),
+					array('listen'	,					'127.0.0.1'),
 					array('port',						($config['fulltext_sphinx_port']) ? $config['fulltext_sphinx_port'] : '3312'),
 					array('log',						$config['fulltext_sphinx_data_path'] . "log/searchd.log"),
 					array('query_log',					$config['fulltext_sphinx_data_path'] . "log/sphinx-query.log"),
