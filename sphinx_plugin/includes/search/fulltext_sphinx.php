@@ -674,7 +674,6 @@ class fulltext_sphinx
 				$cwd = getcwd();
 				chdir($config['fulltext_sphinx_bin_path']);
 				exec('./' . INDEXER_NAME . $rotate . ' --config ' . $config['fulltext_sphinx_config_path'] . 'sphinx.conf index_phpbb_' . $this->id . '_delta >> ' . $config['fulltext_sphinx_data_path'] . 'log/indexer.log 2>&1 &');
-				var_dump('./' . INDEXER_NAME . $rotate . ' --config ' . $config['fulltext_sphinx_config_path'] . 'sphinx.conf index_phpbb_' . $this->id . '_delta >> ' . $config['fulltext_sphinx_data_path'] . 'log/indexer.log 2>&1 &');
 				chdir($cwd);
 			}
 		}
